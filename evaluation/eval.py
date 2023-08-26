@@ -15,10 +15,9 @@ from collections import Counter
 
 class Eval():
 
-    def __init__(self, output_folder: string, dataset: Dataset, topics: list, model_output: dict, name: str, parameter: dict) -> None:
+    def __init__(self, output_folder: string, dataset: Dataset, model_output: dict, name: str, parameter: dict) -> None:
         self.output_folder = output_folder
-        self.dataset = dataset
-        self.topics = topics
+        self.dataset = dataset,
         self.model_output = model_output
         self.name = name
         self.numerical_labels = None
@@ -46,7 +45,7 @@ class Eval():
         logging.info('Generate document Table')
 
         self.generate_numerical_labels()
-        df = pd.DataFrame.from_dict({'message': self.dataset.get_original_corpus(), 'topic': self.topics, 'labels': self.dataset.get_labels(),'numerical Labels' : self.generate_numerical_labels()})
+        df = pd.DataFrame.from_dict({'message': self.dataset.get_original_corpus(), 'topic': self.model_output['topic_values'], 'labels': self.dataset.get_labels(),'numerical Labels' : self.generate_numerical_labels()})
         excel_path = os.path.join(self.output_folder, 'documents.xlsx')
         df.to_excel(excel_path)
         
@@ -58,7 +57,7 @@ class Eval():
         df = pd.DataFrame(topic_words, columns= ['Topic words'])
 
         
-        test_dict = Counter(self.topics)
+        test_dict = Counter(self.model_output['topic_values'])
         df['Message count'] = df.index.map(test_dict)
 
         excel_path = os.path.join(self.output_folder, 'topics.xlsx')
@@ -67,11 +66,11 @@ class Eval():
 
     def rand_score(self) -> float:
 
-        return sklearn.metrics.rand_score(self.topics, self.generate_numerical_labels())
+        return sklearn.metrics.rand_score(self.model_output['topic_values'], self.generate_numerical_labels())
 
     def mutual_info_score(self) -> float:
 
-        return sklearn.metrics.mutual_info_score(labels_true = self.generate_numerical_labels(), labels_pred= self.topics)
+        return sklearn.metrics.mutual_info_score(labels_true = self.generate_numerical_labels(), labels_pred= self.model_output['topic_values'])
 
 
     def generate_evaluation(self) -> pd.DataFrame:
@@ -80,7 +79,7 @@ class Eval():
         kpis.update(self.parameter)
         # kpis['name'] = self.name
 
-        kpis['nr_topics'] = len(set(self.topics))
+        kpis['nr_topics'] = len(set(self.model_output['topic_values']))
 
         kpis['Mutual information'] = self.mutual_info_score()
         kpis['Rand score'] = self.rand_score()

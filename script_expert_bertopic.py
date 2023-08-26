@@ -71,7 +71,7 @@ for embedding in embedding_models:
             # Evaluate
             output_folder = os.path.join('output', chatbot, model_name, f"{model_name}_{chatbot}_{config['name']}")
             del config['embeddings']
-            eval = Eval(output_folder=output_folder, dataset= data, topics=model_output['topic_values'], model_output= model_output, name=config['name'], parameter = config)
+            eval = Eval(output_folder=output_folder, dataset= data, model_output= model_output, name=config['name'], parameter = config)
             eval.generate_document_table()
             eval.generate_topic_table(top_n = 5)
             kpis = eval.generate_evaluation()

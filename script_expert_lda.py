@@ -36,10 +36,11 @@ for x in range(start, end, step):
     model.partitioning(use_partitions=False)
     model_output = model.train_model(dataset=data)
     topics = model_output['topic-document-matrix'].argmax(axis = 0)
+    model_output['topic_values'] = topics
 
     # Evaluation
     output_folder = os.path.join('output', chatbot, model_name, f'{model_name}_{x}_{chatbot}')
-    eval = Eval(output_folder=output_folder, dataset= data, topics=topics, model_output= model_output, name=f'roberta_{model_name}_{x}', parameter = parameter)
+    eval = Eval(output_folder=output_folder, dataset= data, model_output= model_output, name=f'roberta_{model_name}_{x}', parameter = parameter)
     eval.generate_document_table()
     eval.generate_topic_table(top_n = 5)
     kpis = eval.generate_evaluation()
