@@ -86,7 +86,12 @@ class Eval():
         kpis['Rand score'] = self.rand_score()
 
         topic_diversity = TopicDiversity(topk=10)
-        topic_diversity_score = topic_diversity.score(self.model_output)
+        
+        try:
+            topic_diversity_score = topic_diversity.score(self.model_output)
+        except:
+            topic_diversity_score = '-'
+        
         kpis['Topic diversity'] = topic_diversity_score
         
         npmi = Coherence(self.dataset.get_corpus(), topk=10, measure='c_npmi')    

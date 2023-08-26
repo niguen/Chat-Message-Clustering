@@ -47,7 +47,7 @@ Available Encoder for Top2Vec[sentence_transformers]:
 
 '''
 
-# embedding_models = ["all-MiniLM-L6-v2"]
+# embedding_models = ["paraphrase-multilingual-MiniLM-L12-v2"]
 embedding_models = ["doc2vec", "distiluse-base-multilingual-cased", "all-MiniLM-L6-v2", "paraphrase-multilingual-MiniLM-L12-v2"]
 min_cluster_size = [2, 5, 10]
 min_samples = [5, 10, 15]
@@ -82,6 +82,9 @@ for embedding in embedding_models:
             config.update(kpis)
             df = pd.DataFrame([config])
             df_list.append(df)
+
+            fig_path = 'wordcloud.png'
+            # model.generate_topic_wordcloud(path = fig_path, topic_num = 1)
             
 
 df = pd.concat(df_list)
