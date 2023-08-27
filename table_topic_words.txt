@@ -1,0 +1,38 @@
+\begin{tabular}{rlr}
+\toprule
+Unnamed: 0 & Topic words & Message count \\
+\midrule
+0 & grüsse, Adresse, Offerte, Aufnahme, erhalten & 71 \\
+1 & neu, x, eigenstrom, anderer, variante & 8 \\
+2 & ekz, Strassenlaterne, Überbauung, Wackelkontakt, Wochentag & 8 \\
+3 & alt, ändern, melden, Streichung, Passwort & 8 \\
+4 & kw, ändern, Vorperiode, i, h & 12 \\
+5 & ekz, elektriker, matti, fritschi, ch & 6 \\
+6 & kw, Kontrolle, Stromnetz, intern, Vertrag & 6 \\
+7 & per, d, Blum, ch, danke & 8 \\
+8 & Jahr, finden, pro, Verbräuche, erhalten & 5 \\
+9 & eingeben, Leistung, stimmen, verbrauchsstell, Anlagenummer & 4 \\
+10 & finden, Land, hab, inklusive, webseit & 7 \\
+11 & Frage, Resp, betreffend, Kundenservice, Stromeinspeisunganlage & 5 \\
+12 & Stromverbrauch, Kundennummer, april, Jahr, Rüeggsegger & 8 \\
+13 & pv, eigenstom, Niutzung, unternehmen, strom & 6 \\
+14 & ekz, Anmeldung, mixstrom, solaranliegen, Magazin & 4 \\
+15 & möchten, e, ekz, Angebot, Tag & 7 \\
+16 & kraftwer, Unternehmen, tarif, Balkon, schweizerisch & 5 \\
+17 & Benutzernahme, Auge, lesen, gmx, Internet & 3 \\
+18 & Ckw, basis, verkaufen, bekommen, April & 6 \\
+19 & chf, app, Elektrizitätstarif, monat, Tarifänderung & 5 \\
+20 & Tarif, unbekannt, Feiertage, Wechsel, schweizerisch & 5 \\
+21 & kw, min, auto, km, e & 5 \\
+22 & verschieden, bitte, Jahr, kunummer, login & 12 \\
+23 & Verbrauch, Mann, jahresgesamt, stromlieferant, Strome & 4 \\
+24 & einspeisung, wohnen, melden, Embrach, vergesen & 2 \\
+25 & melden, Anmeldung, abschließen, evu, erscheinen & 8 \\
+26 & finden, Bonus, updates, Energietarife, Sorry & 9 \\
+27 & Frage, Wechselrichter, Solaranlage, ekz, Netzabschaltung & 7 \\
+28 & wieso, übersichen, verbrauchstell, FR, Kwh & 6 \\
+29 & Schweizer, ändern, schließen, einfach, e & 8 \\
+30 & bauprojekt, schweizerisch, Gartenweg, folgend, d & 1 \\
+31 & Tarif, aufladen, Tagseit, Parkplatz, installierte & 6 \\
+\bottomrule
+\end{tabular}

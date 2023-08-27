@@ -55,7 +55,7 @@ class Eval():
 
         topic_words = [', '.join(words[:top_n]) for words in self.model_output['topics']]
         df = pd.DataFrame(topic_words, columns= ['Topic words'])
-
+        df.index.name = 'Topic'
         
         test_dict = Counter(self.model_output['topic_values'])
         df['Message count'] = df.index.map(test_dict)
