@@ -18,12 +18,6 @@ file = os.path.join(chatbot, dataset)
 worker = Preprocessing(file, stopword_list=custom_stopwords)
 data = worker.dataset_from_excel(dataset)
 
-
-
-
-
-
-
 # parameter
 start = 20
 end = 40

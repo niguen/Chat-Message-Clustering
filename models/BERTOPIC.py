@@ -29,10 +29,7 @@ class BERTOPIC(AbstractModel):
         if 'embeddings' in hyperparameters:
             topics, probabilities = model.fit_transform(messageList, hyperparameters['embeddings'])
 
-
         else:
-            # Encoding and clustering
-           
             topics, probabilities = model.fit_transform(messageList)
       
         topic_labels = model.generate_topic_labels(nr_words= top_words, separator = ', ')

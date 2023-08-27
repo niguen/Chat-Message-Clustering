@@ -2,15 +2,9 @@ import os
 import pandas as pd
 
 from pandas import Timedelta, Timestamp
-from octis.dataset.dataset import Dataset
 from octis.preprocessing.preprocessing import Preprocessing as octisPreprocessing
-import logging
-import string
-
 from octis.dataset.dataset import Dataset as octisDataset
-import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
+
 
 class Dataset(octisDataset):
 

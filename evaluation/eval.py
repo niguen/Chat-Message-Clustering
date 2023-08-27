@@ -17,7 +17,7 @@ class Eval():
 
     def __init__(self, output_folder: string, dataset: Dataset, model_output: dict, name: str, parameter: dict) -> None:
         self.output_folder = output_folder
-        self.dataset = dataset,
+        self.dataset = dataset
         self.model_output = model_output
         self.name = name
         self.numerical_labels = None
@@ -72,6 +72,9 @@ class Eval():
 
         return sklearn.metrics.mutual_info_score(labels_true = self.generate_numerical_labels(), labels_pred= self.model_output['topic_values'])
 
+    def f1_score(self) -> float:
+        
+        return sklearn.metrics.f1_score(y_true= self.generate_numerical_labels() , y_pred= self.model_output['topic_values'], average= 'macro') 
 
     def generate_evaluation(self) -> pd.DataFrame:
         
@@ -81,7 +84,7 @@ class Eval():
 
         kpis['nr_topics'] = len(set(self.model_output['topic_values']))
 
-        kpis['Mutual information'] = self.mutual_info_score()
+        kpis['F1 Score'] = self.f1_score()
         kpis['Rand score'] = self.rand_score()
 
         topic_diversity = TopicDiversity(topk=10)
