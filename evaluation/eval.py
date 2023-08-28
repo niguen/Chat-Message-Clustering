@@ -16,6 +16,7 @@ from collections import Counter
 class Eval():
 
     def __init__(self, output_folder: string, dataset: Dataset, model_output: dict, name: str, parameter: dict) -> None:
+        
         self.output_folder = output_folder
         self.dataset = dataset
         self.model_output = model_output
@@ -82,9 +83,9 @@ class Eval():
         kpis.update(self.parameter)
         # kpis['name'] = self.name
 
-        kpis['nr_topics'] = len(set(self.model_output['topic_values']))
+        kpis['Nr topics'] = len(set(self.model_output['topic_values']))
 
-        kpis['F1 Score'] = self.f1_score()
+        kpis['F1 score'] = self.f1_score()
         kpis['Rand score'] = self.rand_score()
 
         topic_diversity = TopicDiversity(topk=10)

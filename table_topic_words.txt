@@ -1,38 +1,50 @@
 \begin{tabular}{rlr}
 \toprule
-Unnamed: 0 & Topic words & Message count \\
+Topic & Topic words & Message count \\
 \midrule
-0 & gr¸sse, Adresse, Offerte, Aufnahme, erhalten & 71 \\
-1 & neu, x, eigenstrom, anderer, variante & 8 \\
-2 & ekz, Strassenlaterne, ‹berbauung, Wackelkontakt, Wochentag & 8 \\
-3 & alt, ‰ndern, melden, Streichung, Passwort & 8 \\
-4 & kw, ‰ndern, Vorperiode, i, h & 12 \\
-5 & ekz, elektriker, matti, fritschi, ch & 6 \\
-6 & kw, Kontrolle, Stromnetz, intern, Vertrag & 6 \\
-7 & per, d, Blum, ch, danke & 8 \\
-8 & Jahr, finden, pro, Verbr‰uche, erhalten & 5 \\
-9 & eingeben, Leistung, stimmen, verbrauchsstell, Anlagenummer & 4 \\
-10 & finden, Land, hab, inklusive, webseit & 7 \\
-11 & Frage, Resp, betreffend, Kundenservice, Stromeinspeisunganlage & 5 \\
-12 & Stromverbrauch, Kundennummer, april, Jahr, R¸eggsegger & 8 \\
-13 & pv, eigenstom, Niutzung, unternehmen, strom & 6 \\
-14 & ekz, Anmeldung, mixstrom, solaranliegen, Magazin & 4 \\
-15 & mˆchten, e, ekz, Angebot, Tag & 7 \\
-16 & kraftwer, Unternehmen, tarif, Balkon, schweizerisch & 5 \\
-17 & Benutzernahme, Auge, lesen, gmx, Internet & 3 \\
-18 & Ckw, basis, verkaufen, bekommen, April & 6 \\
-19 & chf, app, Elektrizit‰tstarif, monat, Tarif‰nderung & 5 \\
-20 & Tarif, unbekannt, Feiertage, Wechsel, schweizerisch & 5 \\
-21 & kw, min, auto, km, e & 5 \\
-22 & verschieden, bitte, Jahr, kunummer, login & 12 \\
-23 & Verbrauch, Mann, jahresgesamt, stromlieferant, Strome & 4 \\
-24 & einspeisung, wohnen, melden, Embrach, vergesen & 2 \\
-25 & melden, Anmeldung, abschlieﬂen, evu, erscheinen & 8 \\
-26 & finden, Bonus, updates, Energietarife, Sorry & 9 \\
-27 & Frage, Wechselrichter, Solaranlage, ekz, Netzabschaltung & 7 \\
-28 & wieso, ¸bersichen, verbrauchstell, FR, Kwh & 6 \\
-29 & Schweizer, ‰ndern, schlieﬂen, einfach, e & 8 \\
-30 & bauprojekt, schweizerisch, Gartenweg, folgend, d & 1 \\
-31 & Tarif, aufladen, Tagseit, Parkplatz, installierte & 6 \\
+0 & zwei, blum, r√ºckverg√ºtung, andrea, zollinger & 17 \\
+1 & ihnen, ja, morgen, unserem, stromnetz & 12 \\
+2 & akonto, ebill, anapssen, ceo, vorname & 12 \\
+3 & kundennummer, kundenkonto, seien, anlagenummer, falsch & 12 \\
+4 & anschlussgesuch, ausserhalb, totesfall, st√∂rung, rechnug & 10 \\
+5 & energieform, baklonkraftwerk, malus, besitzt, isch & 10 \\
+6 & netto, albrow, basis, man, sehe & 10 \\
+7 & login, sassine, patrick, fritschi, matti & 8 \\
+8 & offerte, aufnahme, lastschrift, kunummer, jedoch & 8 \\
+9 & wechseln, karriere, abo, umgezogen, r√ºckspeisetarif & 8 \\
+10 & kostet, chf, kwh, km, jahr & 7 \\
+11 & eigenstrom, meter, messung, messing,  & 6 \\
+12 & tarifsammlung, preise, objekts, lades√§ule, jahreskosten & 6 \\
+13 & √§ndern, versand, stromtarif, adress√§nderung, vertrag & 6 \\
+14 & tarife, tariffe, unbekannt, halbstrom, bisherige & 5 \\
+15 & teilzahlung, ratenzahlung, zahlungsfrist, direkt, debit & 5 \\
+16 & mixstrom, naturstrom, basic, ekz, was & 4 \\
+17 & tarrife, tarrif, sind, was, ist & 4 \\
+18 & stromverbaruach, stromtarive, projekt, neubau, bauprojekt & 4 \\
+19 & √ºberbauung, leider, eigent√ºmer, eigenes, durchgef√ºhrt & 4 \\
+20 & stromspartipps, sparen, brauche, stromverbrauch, strom & 4 \\
+21 & stomvertr√§ge, produktion, tarif, ,  & 4 \\
+22 & thema, verbrauchstelle, details, verbrauch,  & 4 \\
+23 & photovoltaik, stecker, betreffend, beiden, resp & 4 \\
+24 & lastmessung, lastgangmessung, lastgangdaten, jahresrechung, oder & 4 \\
+25 & vorperiode, quartal, momentaner, warum, verstehe & 4 \\
+26 & inselbetrieb, person, dunkel, egg, anderen & 4 \\
+27 & solar, solaranlage, , ,  & 4 \\
+28 & w√§rmepumpe, gemeldet, heatpump, techniker, aktiv & 4 \\
+29 & k√ºndigen, wollen, gek√ºndigt, k√ºndigung, ladestation & 4 \\
+30 & mahnung, link, laden, zur, geht & 4 \\
+31 & niedrigtarif, emobilit√§t, beratung, autoladestation, melden & 4 \\
+32 & problem, daten, sonst, browser, neue & 4 \\
+33 & defekt, myekz, portal, ,  & 4 \\
+34 & anmelden, abbruch, registrieren, neu, anmeldung & 3 \\
+35 & lade, jahren, augen, internet, schrift & 3 \\
+36 & neukundenummer, messpunktnummer, nummer, iban,  & 3 \\
+37 & solarstrom, solaranlag, lange, k√ºndigungsfrist, anlange & 3 \\
+38 & eigenstromx, was, eigenstrom, ist,  & 3 \\
+39 & schweizer, kredit, land, schlie√üen, bankkonto & 3 \\
+40 & ckw, pv, zuzuweisen, sagt, verfolgen & 3 \\
+41 & stoerung, einspeise, mahnung, ,  & 2 \\
+42 & tarifs, wechsel, tariffe, jahr, des & 2 \\
+43 & r√ºckliefertarife, freie, stellen, ,  & 0 \\
 \bottomrule
 \end{tabular}

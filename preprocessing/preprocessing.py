@@ -34,6 +34,8 @@ class Preprocessing():
                     n_samples: int = None, 
                     ) -> None:
         
+        self.lowercase = lowercase
+        
 
 
         self.octisPreprocessing = octisPreprocessing(
@@ -81,7 +83,10 @@ class Preprocessing():
             label_list = df['Topic'].to_list()
         
         # Preprocessing
-        corpus = [self.octisPreprocessing.simple_preprocessing_steps(document).split() for document in message_list]
+        documents = [self.octisPreprocessing.simple_preprocessing_steps(document) for document in message_list]
+        if self.lowercase:
+             documents = [document.lower() for document in documents]
+        corpus = [document.split() for document in documents]
 
         # generate vocabulary based on preprocessed corpus
         vocabulary = self.octisPreprocessing.filter_words(message_list)

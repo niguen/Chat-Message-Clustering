@@ -1,0 +1,79 @@
+
+├─iban_schweizer_verlassen_kredit_bankkonto
+│    ├─■──schweizer_bank_kredit_verlassen_bankkonto ── Topic: 21
+│    └─neukundenummer_messpunktnummer_nummer_iban_kunde
+│         ├─■──iban_ebill___ ── Topic: 39
+│         └─■──neukundenummer_messpunktnummer_nummer_kunde_iban ── Topic: 31
+└─melden_möchten_neu_app_adresse
+     ├─möchten_melden_adresse_neu_app
+     │    ├─vertrag_leistung_hausanschluss_zuhause_montieren
+     │    │    ├─■──wechseln_versand_umstellung_stomvertrag_adressänderung ── Topic: 14
+     │    │    └─vertrag_nennleistung_reichen_hausanschluss_anpassen
+     │    │         ├─■──vertrag_ändern___ ── Topic: 27
+     │    │         └─■──hausanschluss_reichen_leistung_anpassen_anfangs ── Topic: 34
+     │    └─melden_app_neu_adresse_tag
+     │         ├─solaranlage_verbrauch_kündigen_solaranlagen_tarrif
+     │         │    ├─solaranlage_verbrauch_mixstrom_solaranlagen_solar
+     │         │    │    ├─wärmepumpe_myekz_login_portal_matti
+     │         │    │    │    ├─wärmepumpe_techniker_streichung_sperre_partnerin
+     │         │    │    │    │    ├─■──vergütung_teilzahlung_streichung_stattfinden_partnerin ── Topic: 29
+     │         │    │    │    │    └─■──wärmepumpe_techniker_stunde_sperre_heatpump ── Topic: 17
+     │         │    │    │    └─myekz_login_portal_fritschi_matti
+     │         │    │    │         ├─■──wohnhaus_vermiet_mieterwechsel_log_login ── Topic: 11
+     │         │    │    │         └─■──myekz_fritschi_matti_mailadresse_aktivieren ── Topic: 2
+     │         │    │    └─solaranlage_kündigen_mixstrom_solaranlagen_solar
+     │         │    │         ├─kündigen_mahnung_verbrauch_app_lade
+     │         │    │         │    ├─kündigen_verbrauch_app_vorperiode_problem
+     │         │    │         │    │    ├─■──kündigen_tagseit_parkplatz_installierte_gering ── Topic: 26
+     │         │    │         │    │    └─verbrauch_app_vorperiode_zeigen_lade
+     │         │    │         │    │         ├─■──app_problem_lade_sorry_wohnort ── Topic: 24
+     │         │    │         │    │         └─■──verbrauch_vorperiode_abstecken_übereinstimmen_helfen ── Topic: 1
+     │         │    │         │    └─mahnung_rückspeisetarif_eigenstromx_energieform_anapssen
+     │         │    │         │         ├─mahnung_rückspeisetarif_eigenstromx_energieform_anapssen
+     │         │    │         │         │    ├─■──katasterplan_gutschrift_störung_einspeise_einspeisen ── Topic: 23
+     │         │    │         │         │    └─mahnung_rückspeisetarif_eigenstromx_energieform_anapssen
+     │         │    │         │         │         ├─mahnung_rückspeisetarif_eigenstromx_energieform_anapssen
+     │         │    │         │         │         │    ├─■──wartungsarbeiten_produktionsmeng_produktion_lastmessung_lastgangmessung ── Topic: 9
+     │         │    │         │         │         │    └─■──mahnung_link_vornam_anapssen_laden ── Topic: 16
+     │         │    │         │         │         └─■──energieform_malus_isch_system_energietarife ── Topic: 22
+     │         │    │         │         └─rückspeisetarif_eigenstromx_rückliefertarif__
+     │         │    │         │              ├─■──eigenstromx____ ── Topic: 38
+     │         │    │         │              └─■──rückspeisetarif_rückliefertarif___ ── Topic: 35
+     │         │    │         └─solaranlage_solar_mixstrom_solaranlagen_verschieden
+     │         │    │              ├─mixstrom_stromverbaruach_projekt_neubau_meter
+     │         │    │              │    ├─mixstrom_meter_ceo_ablesung_ekz
+     │         │    │              │    │    ├─■──meter_ceo_ablesung_ekz_ ── Topic: 36
+     │         │    │              │    │    └─■──mixstrom_ekz___ ── Topic: 28
+     │         │    │              │    └─■──stromverbaruach_projekt_neubau_bauprojekt_ausserhalb ── Topic: 13
+     │         │    │              └─solaranlage_solaranlagen_solar_netz_kündigung
+     │         │    │                   ├─■──solaranlage_solaranlagen_solar_netz_verschieden ── Topic: 0
+     │         │    │                   └─■──kündigung_anmeldung___ ── Topic: 32
+     │         │    └─tarrif_einzug_mann_akonto_anmelden
+     │         │         ├─tarrif_akonto_mann_seite_steckdose
+     │         │         │    ├─■──tarrif_akonto_mann__ ── Topic: 18
+     │         │         │    └─■──jahresvergleichsrechner_steckdose_rückspeisen_jahresgesamt_gelten ── Topic: 15
+     │         │         └─einzug_anmelden_autoladestation_rechnug_info
+     │         │              ├─■──anmelden_autoladestation_nötig_info_grundbuch ── Topic: 5
+     │         │              └─■──rechnug_niedrigtarif_totesfall_kund_karriere ── Topic: 10
+     │         └─eigenstrom_danke_chf_per_magazin
+     │              ├─danke_offerte_magazin_auto_chf
+     │              │    ├─teilnahmebedingunge_aktion_laufen_webseit_ursprünglich
+     │              │    │    ├─■──anschlussgesuch_zustimmung_stromtarive_stoerung_portaldat ── Topic: 3
+     │              │    │    └─■──einrichten_automatisch_webseit_ursprünglich_unterstützen ── Topic: 37
+     │              │    └─danke_grüsse_magazin_auto_km
+     │              │         ├─offerte_schicken_patrick_online_kundenkonto
+     │              │         │    ├─■──kundenkonto_bestätigungsmail_umgezogen_soeben_schlicht ── Topic: 19
+     │              │         │    └─■──offerte_post_kunummer_albrow_andrea ── Topic: 12
+     │              │         └─magazin_chf_auto_km_jahr
+     │              │              ├─magazin_km_steuer_zollinger_lesen
+     │              │              │    ├─■──magazin_lesen_zollinger_vergesen_nehmen ── Topic: 7
+     │              │              │    └─■──netto_steuer_basis_einloggen_steuernnachweis ── Topic: 4
+     │              │              └─monat_angebot_hiermit_laut_geld
+     │              │                   ├─■──detailiert_jan_detailliert_aufstellung_hiermit ── Topic: 33
+     │              │                   └─■──angebot_typisch_endkund_einsetzen_beziehungsweise ── Topic: 25
+     │              └─eigenstrom_anlagenummer_messing_zusammenfassung_stimmen
+     │                   ├─■──anlagenummer_zusammenfassung_stimmen_sobald_kontonummer ── Topic: 20
+     │                   └─■──eigenstrom_messung_messing__ ── Topic: 8
+     └─tariffen_tarif_wechsel_tarifsammlung_feiertage
+          ├─■──tarifsammlung_wechsel_bisherig_unternehmen_tarif ── Topic: 30
+          └─■──tariffen_feiertage_tarif__ ── Topic: 6

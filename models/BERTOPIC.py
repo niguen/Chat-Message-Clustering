@@ -36,6 +36,14 @@ class BERTOPIC(AbstractModel):
         topic_labels = [topic.split(', ')[1:] for topic in topic_labels]
         # topicWords = [['x' if i == '' else i for i in topicWords] for topicWords in topic_labels] 
 
+
+        hierarchical_topics = model.hierarchical_topics(messageList)
+        topic_str = model.get_topic_tree(hierarchical_topics)
+        with open("topic_tree.txt", "w") as text_file:
+            text_file.write(topic_str)
+
+
+
         model_output = {"topics": topic_labels}
         model_output['topic_values'] = topics
         model_output['probabilities'] = probabilities   

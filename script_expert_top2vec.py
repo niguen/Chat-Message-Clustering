@@ -1,5 +1,5 @@
 
-from preprocessing.preprocessing_lda import Preprocessing
+from preprocessing.preprocessing import Preprocessing
 from preprocessing.stop_words_de import STOP_WORDS
 from evaluation.eval import Eval
 import pandas as pd
@@ -18,9 +18,9 @@ dataset = os.path.join('input', chatbot, 'expert_messages - clean.xlsx')
 # Preprocessing
 custom_stopwords = list(STOP_WORDS)
 file = os.path.join(chatbot, dataset)
-worker = Preprocessing( file,
+worker = Preprocessing( lowercase= False,
                         remove_punctuation = False,
-                        lemmatize = True,
+                        lemmatize = False,
                         language = 'german',
                         stopword_list = None,
                         remove_numbers = False,
@@ -48,7 +48,7 @@ Available Encoder for Top2Vec[sentence_transformers]:
 '''
 
 # embedding_models = ["paraphrase-multilingual-MiniLM-L12-v2"]
-embedding_models = ["doc2vec", "distiluse-base-multilingual-cased", "all-MiniLM-L6-v2", "paraphrase-multilingual-MiniLM-L12-v2"]
+embedding_models = [ "distiluse-base-multilingual-cased", "all-MiniLM-L6-v2", "paraphrase-multilingual-MiniLM-L12-v2"]
 min_cluster_size = [2, 5, 10]
 min_samples = [5, 10, 15]
 
@@ -62,7 +62,7 @@ for embedding in embedding_models:
     for min_cluster in min_cluster_size:
         for sample in min_samples:
             config = {}
-            config['name'] = f'v{counter}'
+            config['Name'] = f'v{counter}'
             counter = counter + 1
             config['min_cluster_size'] = min_cluster
             config['min_samples'] = sample
@@ -73,8 +73,8 @@ for embedding in embedding_models:
             model_output = model.train_model(data, hyperparameters=config, top_words=10)
 
             # Evaluate
-            output_folder = os.path.join('output', chatbot, model_name, f"{model_name}_{chatbot}_{config['name']}")
-            eval = Eval(output_folder=output_folder, dataset= data, model_output= model_output, name=config['name'], parameter = config)
+            output_folder = os.path.join('output', chatbot, model_name, f"{model_name}_{chatbot}_{config['Name']}")
+            eval = Eval(output_folder=output_folder, dataset= data, model_output= model_output, name=config['Name'], parameter = config)
             eval.generate_document_table()
             eval.generate_topic_table(top_n = 5)
             kpis = eval.generate_evaluation()

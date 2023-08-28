@@ -1,5 +1,5 @@
 
-from preprocessing.preprocessing_lda import Preprocessing
+from preprocessing.preprocessing import Preprocessing
 from preprocessing.stop_words_de import STOP_WORDS
 from evaluation.eval import Eval
 import pandas as pd
@@ -15,7 +15,13 @@ dataset = os.path.join('input', chatbot, 'expert_messages - clean.xlsx')
 
 custom_stopwords = list(STOP_WORDS)
 file = os.path.join(chatbot, dataset)
-worker = Preprocessing(file, stopword_list=custom_stopwords)
+worker = Preprocessing(stopword_list=custom_stopwords,
+                       lowercase=True,
+                       remove_punctuation=True,
+                       lemmatize= True,
+                       remove_numbers=True,
+                       min_chars = 3,
+                       min_words_docs = 2)
 data = worker.dataset_from_excel(dataset)
 
 # parameter
