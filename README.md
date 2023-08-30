@@ -24,6 +24,6 @@ The output of a successfully completed test is three files:
 In addition, illustrations can be generated for the Bertopic and Top2Vec algorithms to show the results.
 
 ### Models
-In addition to the models from the OCTIS library (LDA and NMF), two further models were created for [Bertopic](https://github.com/MaartenGr/BERTopic)and [Top2Vec](https://github.com/ddangelov/Top2Vec). These are located in the `models/` directory.
+In addition to the models from the OCTIS library (LDA and NMF), two further models were created for [Bertopic](https://github.com/MaartenGr/BERTopic) and [Top2Vec](https://github.com/ddangelov/Top2Vec). These are located in the `models/` directory.
 
 
