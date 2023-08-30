@@ -2,49 +2,38 @@
 \toprule
 Topic & Topic words & Message count \\
 \midrule
-0 & zwei, blum, rückvergütung, andrea, zollinger & 17 \\
-1 & ihnen, ja, morgen, unserem, stromnetz & 12 \\
-2 & akonto, ebill, anapssen, ceo, vorname & 12 \\
-3 & kundennummer, kundenkonto, seien, anlagenummer, falsch & 12 \\
-4 & anschlussgesuch, ausserhalb, totesfall, störung, rechnug & 10 \\
-5 & energieform, baklonkraftwerk, malus, besitzt, isch & 10 \\
-6 & netto, albrow, basis, man, sehe & 10 \\
-7 & login, sassine, patrick, fritschi, matti & 8 \\
-8 & offerte, aufnahme, lastschrift, kunummer, jedoch & 8 \\
-9 & wechseln, karriere, abo, umgezogen, rückspeisetarif & 8 \\
-10 & kostet, chf, kwh, km, jahr & 7 \\
-11 & eigenstrom, meter, messung, messing,  & 6 \\
-12 & tarifsammlung, preise, objekts, ladesäule, jahreskosten & 6 \\
-13 & ändern, versand, stromtarif, adressänderung, vertrag & 6 \\
-14 & tarife, tariffe, unbekannt, halbstrom, bisherige & 5 \\
-15 & teilzahlung, ratenzahlung, zahlungsfrist, direkt, debit & 5 \\
-16 & mixstrom, naturstrom, basic, ekz, was & 4 \\
-17 & tarrife, tarrif, sind, was, ist & 4 \\
-18 & stromverbaruach, stromtarive, projekt, neubau, bauprojekt & 4 \\
-19 & überbauung, leider, eigentümer, eigenes, durchgeführt & 4 \\
-20 & stromspartipps, sparen, brauche, stromverbrauch, strom & 4 \\
-21 & stomverträge, produktion, tarif, ,  & 4 \\
-22 & thema, verbrauchstelle, details, verbrauch,  & 4 \\
-23 & photovoltaik, stecker, betreffend, beiden, resp & 4 \\
-24 & lastmessung, lastgangmessung, lastgangdaten, jahresrechung, oder & 4 \\
-25 & vorperiode, quartal, momentaner, warum, verstehe & 4 \\
-26 & inselbetrieb, person, dunkel, egg, anderen & 4 \\
-27 & solar, solaranlage, , ,  & 4 \\
-28 & wärmepumpe, gemeldet, heatpump, techniker, aktiv & 4 \\
-29 & kündigen, wollen, gekündigt, kündigung, ladestation & 4 \\
-30 & mahnung, link, laden, zur, geht & 4 \\
-31 & niedrigtarif, emobilität, beratung, autoladestation, melden & 4 \\
-32 & problem, daten, sonst, browser, neue & 4 \\
-33 & defekt, myekz, portal, ,  & 4 \\
-34 & anmelden, abbruch, registrieren, neu, anmeldung & 3 \\
-35 & lade, jahren, augen, internet, schrift & 3 \\
-36 & neukundenummer, messpunktnummer, nummer, iban,  & 3 \\
-37 & solarstrom, solaranlag, lange, kündigungsfrist, anlange & 3 \\
-38 & eigenstromx, was, eigenstrom, ist,  & 3 \\
-39 & schweizer, kredit, land, schließen, bankkonto & 3 \\
-40 & ckw, pv, zuzuweisen, sagt, verfolgen & 3 \\
-41 & stoerung, einspeise, mahnung, ,  & 2 \\
-42 & tarifs, wechsel, tariffe, jahr, des & 2 \\
-43 & rückliefertarife, freie, stellen, ,  & 0 \\
+0 & solarstrom, photovoltaik, photovoltanik, solar, solaranlage & 21 \\
+1 & produktionsmenge, rückvergütung, gutschriften, ceo, rückspeisetarif & 18 \\
+2 & kundennummer, verbrauchsstellennummer, messpunktnummer, kunden, 218428 & 17 \\
+3 & tarifsammlung, tarif, tarifs, tarife, tariffe & 15 \\
+4 & produktion, stromverbaruach, stromtarive, stromvertrag, wallbox & 14 \\
+5 & verbrauchstelle, verbrauchswerte, verbräuche, verbrauch, vorperiode & 14 \\
+6 & autoladestation, registrieren, bike, aufladen, adressänderung & 13 \\
+7 & 2084, 8421, magazin, sassine, 78464 & 11 \\
+8 & eigenstromx, eigenstrom, naturstrom, ist, basic & 10 \\
+9 & ekzloginmatti61, login, einloggen, mailadresse, schließen & 8 \\
+10 & kw, kwh, 75kw, 7kw, 20kw & 7 \\
+11 & mahnung, anapssen, 15min, gekündigt, fragen & 7 \\
+12 & vertrag, verkauf, objekts, sponsoring, stomverträge & 7 \\
+13 & 2023, laden, störung, strom, und & 7 \\
+14 & jahresrechung, jahreskosten, lastgangdaten, lastmessung, lastgangmessung & 7 \\
+15 & myekz, portal, verbrauchsdarstellung, zu, verbrauchsstellen & 7 \\
+16 & elektromobilität, rückliefertarife, energieeffinzienz, netzanschlusskosten, zwischenablesung & 7 \\
+17 & stromes, strom, stromlieferant, stromspartipps, strassenlampe & 7 \\
+18 & bank, debit, teilzahlung, zahlungsfrist, ratenzahlung & 6 \\
+19 & ebill, umstellung, akonto, mann, iban & 6 \\
+20 & portaldaten, portal, login, log, kunden & 5 \\
+21 & kündigung, kündigen, wollen, ladestation, wir & 5 \\
+22 & endverbrauchers, steuerbeleg, steuern, 2022, teilnahmebedingungen & 5 \\
+23 & boiler, meter, elektroheizung, baklonkraftwerk, elektroboiler & 5 \\
+24 & machen, lastschrift, eingerichtet, mach, auch & 5 \\
+25 & elektromobilität, tagen, tagseit, tag, ansteuerung & 5 \\
+26 & app, lade, browser, ladestation, updates & 4 \\
+27 & wärmepumpe, heatpump, gemeldet, ist, anvisiert & 4 \\
+28 & steuernnachweis, steuerbescheid, steuernachweise, steuer & 4 \\
+29 & tarrif, tarrife, sind, der, ist & 4 \\
+30 & mixstrom, ekz, ist, 58 & 4 \\
+31 & energietarife, energieform, besitzt, und, malus & 3 \\
+32 & schweizerisch, schließen, bankverbindung, bankkonto, schweizer & 3 \\
 \bottomrule
 \end{tabular}

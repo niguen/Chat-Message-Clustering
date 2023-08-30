@@ -4,14 +4,36 @@ from top2vec import Top2Vec
 from keybert import KeyBERT
 import pandas as pd
 
+from evaluation.eval import Dataset
+
 class TOP2VEC(AbstractModel):
+    """Model class for Top2Vec,optimised for use with the OCTIS framework.
+   
+    Examples:
+
+    ```python
+    model = TOP2VEC()
+    ```
+    """
 
     def __init__(self):
         super().__init__()
 
         self.model = None
 
-    def train_model(self, dataset, hyperparameters, top_words=10):
+    def train_model(self, dataset: Dataset, hyperparameters: dict, top_words: int = 10) -> dict:
+        """Method for grouping messages with Top2Vec
+
+        Args:
+            dataset (Dataset): OCTIS Dataset
+            hyperparameters (dict): Dictionary with the hyperparameters for the model: embeddingModel, min_cluster_size, min_samples
+            top_words (int, optional): Number of topic words to extract. Defaults to 10.
+
+        Returns:
+            dict: model_output with the keys: 
+                - topics: Topic words
+                - topic_values: Assignment of the individual messages in the data set
+        """
 
 
 
@@ -53,13 +75,28 @@ class TOP2VEC(AbstractModel):
 
         return model_output
     
-    def generate_topic_wordcloud(self, path: str, topic_num: int):
+    def generate_topic_wordcloud(self, path: str, topic_num: int) -> None:
+        """Method for creating a topic word cloud, in which the topic words are compiled in an image. Important words are larger than unimportant words.
+
+        Args:
+            path (str): Path where the figure should be saved
+            topic_num (int): Number of topic words to include in wordclooud
+        """
 
         fig = self.model.generate_topic_wordcloud(topic_num)
         fig.savefig(path)
 
 
-    def get_key_words(self, documents: str, top_n : int):
+    def get_key_words(self, documents: str, top_n : int) -> list:
+        """Method for extracting keywords from messages using the library keyBert
+
+        Args:
+            documents (str): List of documents
+            top_n (int): Number of topic words to extract
+
+        Returns:
+            list: List of topic words in decending order
+        """
 
         kw_model = KeyBERT()
         keywords = kw_model.extract_keywords(documents, top_n = top_n)

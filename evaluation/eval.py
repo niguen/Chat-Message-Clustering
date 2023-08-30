@@ -14,6 +14,20 @@ import string
 from collections import Counter
 
 class Eval():
+    """Evaluation class for genarating kpis and tables.
+    Args:
+            output_folder (string): Folder to save the evaöuation files
+            dataset (Dataset): Octis dataset with messages and preprocessed data
+            model_output (dict): Output of the model
+            name (str): Name of the trail
+            parameter (dict): Corresponding model parameters
+
+    Examples:
+
+    ```python
+    evaluation = eval('./test/', dataset, model_output, 'v1')
+    ```
+    """
 
     def __init__(self, output_folder: string, dataset: Dataset, model_output: dict, name: str, parameter: dict) -> None:
         
@@ -30,6 +44,8 @@ class Eval():
             os.makedirs(self.output_folder)
 
     def generate_numerical_labels(self) -> None:
+        """ Generates numerical representation of expert labels. """
+        
 
         if self.numerical_labels is None:
             # convert labels into a numerical format
@@ -43,6 +59,7 @@ class Eval():
         return self.numerical_labels
 
     def generate_document_table(self) -> None:
+        """ Generates a table with all documents (messages) and information about the topic assigned by the model as well as the expert labels. """
         logging.info('Generate document Table')
 
         self.generate_numerical_labels()
@@ -52,6 +69,11 @@ class Eval():
         
         
     def generate_topic_table(self, top_n : int = 10) -> None:
+        """Create a list of the most important words for each topic, as well as the number of words per topic.
+
+        Args:
+            top_n (int, optional): The number of most important words to be displayed in the table. Defaults to 10.
+        """
         logging.info('Generate topic Table')
 
         topic_words = [', '.join(words[:top_n]) for words in self.model_output['topics']]
@@ -66,18 +88,39 @@ class Eval():
 
 
     def rand_score(self) -> float:
+        """Rand score for the evaluation of clustering. The implementation of sklearn is used for the calculation.
+
+        Returns:
+            float: Value of the rand score.
+        """
 
         return sklearn.metrics.rand_score(self.model_output['topic_values'], self.generate_numerical_labels())
 
     def mutual_info_score(self) -> float:
+        """Mutual information score for the evaluation of topic modeling. The implementation of sklearn is used for the calculation.
+
+        Returns:
+            float: Value of the mutual information score.
+        """
 
         return sklearn.metrics.mutual_info_score(labels_true = self.generate_numerical_labels(), labels_pred= self.model_output['topic_values'])
 
     def f1_score(self) -> float:
+        """F1 score for the evaluation of clustering. The implementation of sklearn is used for the calculation. 
+           For the evaluation of multiclass models, the average is calculated as macro.
+
+        Returns:
+            float: Value of the F1 score.
+        """
         
         return sklearn.metrics.f1_score(y_true= self.generate_numerical_labels() , y_pred= self.model_output['topic_values'], average= 'macro') 
 
     def generate_evaluation(self) -> pd.DataFrame:
+        """Creates a csv file containing evaluation metrics and the parameters for the respective test run.
+
+        Returns:
+            pd.DataFrame: Dataframe with the respective key figures to create the overall overview.
+        """
         
         kpis = {}
         kpis.update(self.parameter)
@@ -113,6 +156,14 @@ class Eval():
 
 
     def generate_vector_kpis(self, df: pd.DataFrame) -> dict:
+        """Creates different metrics to evaluate the vector representation of the encoder models. Not used in the current version. (Deprecated)
+
+        Args:
+            df (pd.DataFrame): Dataframe which contains the vector representation of the individual messages in the column 'vec'.
+
+        Returns:
+            dict: Dictionary with the corresponding metrics
+        """
         
         kpis = {}
 
@@ -130,41 +181,17 @@ class Eval():
 
         return kpis
     
-    # def generate_overview(self, data : Dataset, modelOutput: ModelOutput, statistics: dict) -> None:
-    #     logging.info('Generate Overview')
-        
-    #     stats = []
-    #     values = np.unique(modelOutput.getTopics())
-    #     for value in values:
-    #         stats.append({'label': value, 'count':modelOutput.getTopics().count(value)})
-    #     class_overview = pd.DataFrame.from_records(stats, index='label')
 
+    def generate_topic_distribution(self, statistics : dict, df: pd.DataFrame) -> dict:
+        """Calculates two metrics: Inents per Topic and Topic per Intent, which represents the accuracy of a cluster with respect to predefined groups. Not used in the current version. (Deprecated)
 
-    #     # pd.options.plotting.backend = "plotly"
-       
-    #     # fig, ax = plt.subplots()
-    #     fig = class_overview.plot.bar(y='count')
-    #     fig_path = os.path.join(self.output_folder, 'class_overview.png')
-    #     fig.figure.savefig(fig_path)
-        
-    #     # html = fig.to_html()
-    #     # html = '<html> <head><meta charset="utf-8" /></head><body> </body></html>'
-    #     # html = f"<html> <head><meta charset='utf-8' /></head><body> <img src={'class_overview.png'}/> </body></html>"
-    #     html = f"<html> <head><meta charset='utf-8' /></head><body> <img src={'intents_per_topic.png'}/> <img src={'topics_per_intent.png'}/> </body></html>"
-        
-        
-    #     kpis = self.generate_kpis(data, modelOutput)
-        
-    #     html_text = add_description_html(html, self.name, statistics)
+        Args:
+            statistics (dict): Dictionary containing the key 'unclassified messages'.
+            df (pd.DataFrame): Dataframe containing information about the dataset and labels
 
-
-    #     # save the file again
-    #     with open(os.path.join(self.output_folder, f'overview.html'), "w", encoding="utf-8") as outf:
-    #         outf.write(html_text)
-        
-    #     return kpis
-
-    def generate_topic_distribution(self, statistics : dict, df: pd.DataFrame):
+        Returns:
+            dict: Dictionary with the corresponding metrics
+        """
 
         # df.rename(columns={'cluster': 'topics'}, inplace=True)
         num_topics = list(df['topics'].unique())

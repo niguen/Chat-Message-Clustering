@@ -49,8 +49,8 @@ Available Encoder for Top2Vec[sentence_transformers]:
 
 # embedding_models = ["paraphrase-multilingual-MiniLM-L12-v2"]
 embedding_models = [ "distiluse-base-multilingual-cased", "all-MiniLM-L6-v2", "paraphrase-multilingual-MiniLM-L12-v2"]
-min_cluster_size = [2, 5, 10]
-min_samples = [5, 10, 15]
+min_cluster_size = [2, 3, 4, 5]
+min_samples = [2, 3, 4, 5]
 
 
 df_list = []
